@@ -35,9 +35,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 95%, 0 65%);
     z-index: -1;
 }
 
