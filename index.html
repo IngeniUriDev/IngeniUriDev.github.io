@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uriel Rojas Gómez | Desarrollador Junior & Scrum Master</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Currículum Vitae interactivo de Uriel Rojas Gómez, Desarrollador Full Stack & Mobile Junior con experiencia en metodologías ágiles (Scrum Master). Especializado en Java Spring, Django, Laravel, Angular, Kotlin y bases de datos MySQL/PostgreSQL.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS (Separated for clean modularity) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background elements for Glassmorphism visual depth -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container">
+        <!-- TOP NAVIGATION / CONTROLS -->
+        <header class="controls-header no-print">
+            <div class="logo">
+                <span class="gradient-text">Dev</span>Portafolio
+            </div>
+            <div class="control-buttons">
+                <button id="theme-toggle" class="btn btn-secondary" title="Cambiar Tema" aria-label="Cambiar Tema">
+                    <i class="fas fa-sun theme-icon-light"></i>
+                    <i class="fas fa-moon theme-icon-dark"></i>
+                    <span class="btn-text">Tema</span>
+                </button>
+                <button id="print-btn" class="btn btn-primary" title="Imprimir o Guardar como PDF" aria-label="Imprimir currículum">
+                    <i class="fas fa-file-pdf"></i>
+                    <span class="btn-text">Exportar PDF</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- MAIN CV GRID -->
+        <main class="cv-grid">
+            <!-- LEFT COLUMN (Profile, Contact, Skills) -->
+            <aside class="left-col">
+                <!-- PROFILE CARD -->
+                <section class="card profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <img src="Uriel%20Rojas%20Gomez.png" alt="Uriel Rojas Gómez" class="profile-img">
+                        </div>
+                        <h1 class="profile-name" id="cv-name">Uriel Rojas Gómez</h1>
+                        <p class="profile-title" id="cv-title">Desarrollador Full Stack & Mobile Junior</p>
+                        <p class="profile-subtitle"><i class="fas fa-users-cog"></i> Scrum Master</p>
+                    </div>
+                    <div class="profile-bio">
+                        <p id="cv-bio">
+                            Apasionado por la tecnología, el desarrollo ágil, el diseño de sistemas y la gestión de proyectos. Especializado en la creación de aplicaciones móviles y web de tipo CRUD integrando bases de datos relacionales robustas. Experiencia liderando equipos técnicos bajo metodologías Scrum desde la fase de planeación y modelado.
+                        </p>
+                    </div>
+                    <hr class="divider">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope icon-accent"></i>
+                            <span id="cv-email">urielr.g.57@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone icon-accent"></i>
+                            <span id="cv-phone">+52 714 108 7330</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt icon-accent"></i>
+                            <span id="cv-location">Santiago Tianguistenco, Estado de México</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github icon-accent"></i>
+                            <span id="cv-github">github.com/IngeniUriDev</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin icon-accent"></i>
+                            <span id="cv-linkedin">linkedin.com/in/uriel-rojas-gomez</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SKILLS CARD -->
+                <section class="card skills-card">
+                    <h2 class="section-title"><i class="fas fa-tools icon-section"></i> Habilidades</h2>
+                    
+                    <div class="skill-category">
+                        <h3>Desarrollo Frontend & Móvil</h3>
+                        <div class="skills-tags">
+                            <span class="tag tag-frontend"><i class="fab fa-angular"></i> Angular</span>
+                            <span class="tag tag-mobile"><i class="fab fa-android"></i> Android SDK</span>
+                            <span class="tag tag-mobile"><i class="dev-icon">K</i> Kotlin</span>
+                            <span class="tag tag-mobile"><i class="fab fa-java"></i> Java</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Desarrollo Backend & Frameworks</h3>
+                        <div class="skills-tags">
+                            <span class="tag tag-backend"><i class="fab fa-java"></i> Spring Boot</span>
+                            <span class="tag tag-backend"><i class="fab fa-python"></i> Django</span>
+                            <span class="tag tag-backend"><i class="fab fa-laravel"></i> PHP Laravel</span>
+                            <span class="tag tag-backend"><i class="fab fa-python"></i> Python</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Bases de Datos & Herramientas</h3>
+                        <div class="skills-tags">
+                            <span class="tag tag-db"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tag tag-db"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="tag tag-tool"><i class="fas fa-code"></i> VS Code</span>
+                            <span class="tag tag-tool"><i class="fas fa-laptop-code"></i> Android Studio</span>
+                            <span class="tag tag-tool"><i class="fab fa-git-alt"></i> Git / GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Gestión de Proyectos & Análisis</h3>
+                        <div class="skills-tags">
+                            <span class="tag tag-agile"><i class="fas fa-file-signature"></i> Acta de Constitución (Project Charter)</span>
+                            <span class="tag tag-agile"><i class="fas fa-sitemap"></i> Diagrama Funcional</span>
+                            <span class="tag tag-agile"><i class="fas fa-project-diagram"></i> Casos de Uso (UML)</span>
+                            <span class="tag tag-agile"><i class="fas fa-tasks"></i> Scrum Master</span>
+                            <span class="tag tag-agile"><i class="fab fa-jira"></i> Jira</span>
+                            <span class="tag tag-agile"><i class="fas fa-users"></i> Distribución de tareas</span>
+                            <span class="tag tag-agile"><i class="fas fa-check-double"></i> Apps CRUD</span>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- RIGHT COLUMN (Experience, Projects, Education) -->
+            <div class="right-col">
+                <!-- EXPERIENCE CARD -->
+                <section class="card experience-card">
+                    <h2 class="section-title"><i class="fas fa-briefcase icon-section"></i> Experiencia Laboral</h2>
+                    
+                    <div class="timeline">
+                        <!-- CORPORATIVO NOVA -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2025 - 2026</div>
+                            <div class="timeline-content">
+                                <h3 class="job-title">Desarrollador Full Stack &amp; Scrum Master Junior</h3>
+                                <h4 class="company-name"><i class="fas fa-building"></i> Corporativo Nova</h4>
+                                <ul class="job-duties">
+                                    <li>Desarrollo de microservicios y APIs REST robustas utilizando <strong>Java Spring Boot</strong> y <strong>Python (Django)</strong> en el backend.</li>
+                                    <li>Creación de interfaces web dinámicas y modulares con <strong>Angular</strong> en el frontend, optimizando el consumo de endpoints.</li>
+                                    <li>Desarrollo de aplicaciones móviles internas en <strong>Android Studio</strong> implementando lógica nativa con <strong>Kotlin</strong> y <strong>Java</strong>.</li>
+                                    <li>Liderazgo ágil como <strong>Scrum Master</strong>, gestionando flujos de trabajo e iteraciones del equipo en <strong>Jira</strong> para asegurar entregas continuas y eficientes.</li>
+                                    <li>Definición e inicio de proyectos de software mediante la elaboración de **Actas de Constitución (Project Charter)**, delimitando alcance, hitos y responsabilidades.</li>
+                                    <li>Modelado y arquitectura de sistemas de información mediante el diseño de **Diagramas Funcionales** y **Diagramas de Casos de Uso (UML)** para alinear los requerimientos del negocio con la implementación técnica.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- RALOY LUBRICANTES -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3 class="job-title">Desarrollador de Aplicaciones &amp; Soporte Técnico</h3>
+                                <h4 class="company-name"><i class="fas fa-building"></i> Raloy Lubricantes</h4>
+                                <ul class="job-duties">
+                                    <li>Creación y mantenimiento de aplicaciones web <strong>CRUD</strong> internas usando <strong>PHP Laravel</strong> para la optimización de procesos de calidad y logística.</li>
+                                    <li>Diseño previo de flujos de trabajo mediante **Diagramas Funcionales** para estructurar la base de datos y la navegación de las aplicaciones web desarrolladas.</li>
+                                    <li>Administración y optimización de bases de datos relacionales en <strong>MySQL</strong> y <strong>PostgreSQL</strong>, diseñando esquemas y consultas complejas para reportes en tiempo real.</li>
+                                    <li>Automatización de respaldos e integraciones de bases de datos internas escribiendo scripts en <strong>Python</strong>.</li>
+                                    <li>Soporte técnico a infraestructura local de la planta, redes y configuración de equipos de desarrollo.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- OXIRUS -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h3 class="job-title">Desarrollador de Software Junior &amp; Soporte Técnico</h3>
+                                <h4 class="company-name"><i class="fas fa-building"></i> Oxirus</h4>
+                                <ul class="job-duties">
+                                    <li>Colaboración activa en el desarrollo de aplicaciones móviles nativas y de escritorio utilizando <strong>Java</strong> y <strong>Android Studio</strong>.</li>
+                                    <li>Apoyo en el análisis de requerimientos a través del modelado de **Casos de Uso UML** para la interacción de los usuarios con el sistema de base de datos.</li>
+                                    <li>Diseño de consultas, vistas e integración de bases de datos **MySQL** con interfaces de usuario en aplicaciones CRUD.</li>
+                                    <li>Instalación, soporte técnico preventivo y solución de fallas de software en estaciones de trabajo y servidores locales.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROYECTOS DESTACADOS CARD -->
+                <section class="card projects-card">
+                    <h2 class="section-title"><i class="fas fa-code-branch icon-section"></i> Proyectos de Referencia</h2>
+                    <div class="projects-grid">
+                        <!-- Card 1 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-iconMobile"><i class="fas fa-mobile-alt"></i></span>
+                                <h4>Aplicaciones Móviles</h4>
+                            </div>
+                            <p>Generación de aplicaciones Android nativas para el control de activos y lectura de sensores. Construida en Kotlin y Android Studio, conectada a APIs REST para un mejor control y gestión de inventarios.</p>
+                            <div class="project-tech">
+                                <span>Kotlin</span>
+                                <span>Spring Boot</span>
+                                <span>Jira</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-iconWeb"><i class="fas fa-globe"></i></span>
+                                <h4>CRUD Core Diamond</h4>
+                            </div>
+                            <p>Sistema administrativo web para control y trazabilidad de productos. Desarrollado con Laravel y bases de datos MySQL, asegurando información y permisos a usuarios para gestionar y manipular datos dependiendo de sus roles para lograr un mayor control.</p>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Blade</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-iconMobile"><i class="fas fa-users-cog"></i></span>
+                                <h4>Gestión y Dirección Ágil</h4>
+                            </div>
+                            <p>Gestión de tiempos, planeación y tareas de desarrollo de software desde su concepción. Elaboración de **Actas de Constitución (Project Charter)**, **Diagramas Funcionales** y **Casos de Uso** para la distribución semanal de tareas del equipo.</p>
+                            <div class="project-tech">
+                                <span>Scrum</span>
+                                <span>Jira</span>
+                                <span>UML</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-iconWeb"><i class="fas fa-database"></i></span>
+                                <h4>Cambios DB & Soporte</h4>
+                            </div>
+                            <p>Modificación y optimización controlada de bases de datos a través de tickets de soporte técnico preautorizados para actualizar información y gestionar el flujo de datos empresariales de forma segura.</p>
+                            <div class="project-tech">
+                                <span>MySQL</span>
+                                <span>SCP</span>
+                                <span>Odoo</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION & NOTE -->
+                <section class="card education-card">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap icon-section"></i> Educación y Certificaciones</h2>
+                    <div class="education-item">
+                        <h4>Ingeniería en Software y Redes</h4>
+                        <p class="edu-details">Universidad Tecnológica de México (UNITEC) </p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Cursos y Certificaciones</h4>
+                        <p class="edu-details">Desarrollo Web Full Stack con Angular y Spring Boot | Análisis de Sistemas y Modelado UML | Gestión Ágil con Scrum y Jira</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Custom JS (Separated for clean modularity) -->
+    <script src="script.js"></script>
+</body>
+</html>
