@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contactos CRUD – IngeniUriDev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="crud.css"/>
+</head>
+<body>
+  <header class="crud-header">
+    <a href="index.html" class="back-btn">← Volver al CV</a>
+    <h1>📋 Gestor de Contactos</h1>
+    <p>Demo CRUD con FastAPI + PostgreSQL</p>
+  </header>
+
+  <main class="crud-main">
+    <!-- FORMULARIO -->
+    <section class="form-card">
+      <h2 id="form-title">➕ Nuevo Contacto</h2>
+      <form id="contact-form">
+        <input type="hidden" id="contact-id"/>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="correo@ejemplo.com" required/>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" placeholder="55 1234 5678"/>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" placeholder="Nombre de la empresa"/>
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="submit-btn" class="btn-primary">Guardar Contacto</button>
+          <button type="button" id="cancel-btn" class="btn-secondary hidden">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- LISTA DE CONTACTOS -->
+    <section class="list-card">
+      <div class="list-header">
+        <h2>👥 Contactos Guardados</h2>
+        <span id="contact-count" class="badge">0</span>
+      </div>
+
+      <div id="status-msg" class="status-msg hidden"></div>
+
+      <div id="contacts-grid" class="contacts-grid">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Conectando con la API...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="crud-footer">
+    <p>API: <a id="api-link" href="#" target="_blank">cargando...</a> · Hecho con FastAPI + PostgreSQL + GitHub Pages</p>
+  </footer>
+
+  <script src="crud.js"></script>
+</body>
+</html>
